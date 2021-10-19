@@ -28,6 +28,8 @@ jobs:
 
       - name: Qodana - Code Inspection
         uses: JetBrains/qodana-action-eap@main
+        with:
+          linter: qodana-jvm
 
   test:
     name: Test
