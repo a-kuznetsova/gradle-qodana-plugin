@@ -28,9 +28,6 @@ jobs:
 
       - name: Qodana - Code Inspection
         uses: JetBrains/qodana-action@add_default_linter
-        with:
-          additional-env-variables: |
-            IDE_PROPERTIES_PROPERTY='-Didea.required.plugins.id=Git4Idea,Subversion,hg4idea'
 
   test:
     name: Test
